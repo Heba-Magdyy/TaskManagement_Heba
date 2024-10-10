@@ -5,22 +5,24 @@ import { Link } from 'react-router-dom'
 export default function Landing() {
   return (
     <>
-    <div className='flex gap-10'>
+    <div className='flex gap-10 container lg:text-7xl sm:text-2xl md:text-4xl mx-auto max-h-fit px-4 lg:px-8 '>
         <div className='flex flex-col m-4'>
-            <h1 className='text-darkest text-7xl mt-16 ml-6' >
+            <h1 className='text-darkest mt-16 ml-4 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl' >
                 Task <br/> Management
             </h1>
-                <div className='text-darkest ml-7 mt-4 text-2xl'  style={{ color: '#00477F' }}>
+                <div className='text-darkest ml-7 mt-4 text-sm sm:text-md md:text-lg lg:text-2xl'  style={{ color: '#00477F' }}>
                 All time management begins with planning
                 </div>
-                <div className=' flex gap-8 mt-24 ml-6 text-lg'>
-                <button className='bg-darkest text-white border rounded-lg p-3' style={{ borderRadius: '17px' }}>
+                <div className=' flex gap-8 mt-24 ml-4 text-md sm:text-xl md:text-2xl lg:text-3xl '>
+                <button className='bg-darkest text-white border p-3 lg:p-4' style={{ borderRadius: '17px' }}>
                   <Link to={'/dashboard'}>Log in</Link>
                 </button>
-                <button className='bg-darkest text-white border rounded-lg p-3' style={{ borderRadius: '17px' }}>Sign up</button>
+                <button className='bg-darkest text-white border p-3 lg:p-4' style={{ borderRadius: '17px' }}>Sign up</button>
                 </div>
         </div>
-    <img src={Landingimg} />
+        <div className='mt-10'>
+        <img src={Landingimg} />
+        </div>
     </div>
     
     </>
